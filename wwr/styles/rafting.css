@@ -1,0 +1,140 @@
+:root {
+  --primary_color: #E63946;
+  --secondary_color: #F1FAEE;
+  --accent1-color: #A8DADC;
+  --accent2_color: #457B9D;
+  --font-heading: 'Smooch', cursive;
+  --font-text: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: var(--font-text);
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  color: var(--secondary_color);
+  background-color: #f0f0f0;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between	;
+  }
+main {
+  flex: 1;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--primary_color);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* add styles to the links */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* positioning the h1 and article elements absolutely */
+.hero {
+  position: relative;
+  background-image: url(images/rafting58_600.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+}
+
+.hero h1 {
+  position: absolute;
+  color: white;
+  font-family: var(--font-heading);
+  top: 20px;
+  left: 20px;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  max-width: 300px;
+  font-family: var(--font-text);
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero article img {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+
+/* section styles */
+/* Ajusta los estilos para asegurar que el párrafo "History" se visualice correctamente */
+section {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  opacity: 1;
+}
+
+section p {
+  color: black;
+  font-family: var(--font-text); 
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 100%;
+  opacity: 1;
+}
+
+
+section h2 {
+  color: var(--primary_color);
+  font-family: var(--font-heading);
+}
+
+.section-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.section-images {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* footer styles */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--primary_color);
+  color: white;
+}
+
+nav.sociallinks a img {
+  border: none;
+  text-decoration: none;
+  height: 24px;
+  width: 24px;
+}
+
+.sociallinks a {
+  text-decoration: none;
+}
