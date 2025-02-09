@@ -194,7 +194,6 @@ nav.sociallinks a img {
 /* map */
 iframe{
   width: 100%;
-  max-height: auto;
   margin: auto;
   box-shadow: 0 0 2px;
 }
