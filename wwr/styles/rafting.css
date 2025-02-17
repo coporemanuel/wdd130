@@ -7,7 +7,7 @@
   --font-text: 'Montserrat', sans-serif;
 }
 
-/* Basic Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -184,6 +184,7 @@ footer p {
 nav.sociallinks {
   display: flex;
   gap: 20px;
+  justify-content: center;
 }
 
 nav.sociallinks a img {
@@ -191,11 +192,32 @@ nav.sociallinks a img {
   width: 24px;
 }
 
-/* map */
-iframe{
+/* Map & Form Container Styling */
+.map-form-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  background-color: var(--accent1-color);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.map {
+  flex: 1;
+}
+
+.form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+iframe {
   width: 100%;
-  margin: auto;
-  box-shadow: 0 0 2px;
+  height: 450px;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* FORM */
@@ -205,10 +227,10 @@ body {
   padding: 20px;
 }
 main {
-  max-width: 600px;
-  margin: auto;
+  max-width: 960px;
+  margin: 1em auto;
   background-color: var(--accent1-color);
-  padding: 20px;
+  padding: 1em;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -219,7 +241,8 @@ h2 {
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: center
+  justify-content: center;
+  /* background-color: var(--accent1-color); my last changing */
 }
 .employee {
   text-align: center;
