@@ -1,12 +1,13 @@
 :root {
-  --primary_color: #E63946;
-  --secondary_color: #F1FAEE;
-  --accent1-color: #A8DADC;
-  --accent2_color: #457B9D;
+  --primary_color: #E63946; /* Adjust if needed */
+  --secondary_color: #F1FAEE; /* Adjust if needed */
+  --accent1-color: #A8DADC; /* Adjust if needed */
+  --accent2_color: #457B9D; /* Adjust if needed */
   --font-heading: 'Smooch', cursive;
   --font-text: 'Montserrat', sans-serif;
+  --text-dark: #333; /* Darker text color */
+  --text-light: #fff; /* Lighter text color */
 }
-
 
 * {
   margin: 0;
@@ -43,7 +44,7 @@ header nav.links {
 header nav.links a {
   font-family: var(--font-heading);
   text-decoration: none;
-  color: var(--secondary_color);
+  color: var(--text-light); /* Use lighter text color */
   font-weight: bold;
   font-size: 1.2em; 
 }
@@ -67,10 +68,11 @@ header nav.links a {
   font-family: var(--font-heading);
   font-size: 2.5em;
   margin: 20px 0;
-  color: var(--secondary_color);
+  color: var(--text-light); /* Use lighter text color */
   top: 120px;
-  left: 40px;
-  background-color: rgba(0, 0, 0, 0.4);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7); /* Increase opacity for better contrast */
   padding: 15px;
   border-radius: 10px;
   text-align: center; 
@@ -84,8 +86,8 @@ header nav.links a {
   width: 90vw;
   max-width: 1200px;
   bottom: 100px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.7); /* Increase opacity for better contrast */
+  color: var(--text-light); /* Use lighter text color */
   padding: 10px;
   font-family: var(--font-text);
   flex-wrap: wrap;
@@ -121,11 +123,11 @@ header nav.links a {
   font-family: 'Smooch Sans', sans-serif;
   font-size: 2em;
   margin-bottom: 10px;
-  color: #333;
+  color: var(--text-dark); /* Use darker text color */
 }
 
 .history p {
-  color: #555;
+  color: var(--text-dark); /* Use darker text color */
 }
 
 /* Adventures Section Styling */
@@ -144,13 +146,14 @@ header nav.links a {
   font-family: 'Smooch Sans', sans-serif;
   font-size: 3em;
   margin-bottom: 10px;
-  color: #333;
+  color: var(--text-dark); /* Use darker text color */
   text-align: center;
 }
 
 .section p {
   max-width: 800px;
   margin: 0 auto;
+  color: var(--text-dark); /* Use darker text color */
 }
 
 .section-images {
@@ -186,6 +189,7 @@ footer {
 footer p {
   margin-inline: auto;
   text-align: center;
+  color: var(--text-light); /* Use lighter text color */
 }
 
 nav.sociallinks {
@@ -326,7 +330,7 @@ button{
 .newsletter button {
   padding: 15px;
   background-color: var(--primary_color);
-  color: var(--secondary_color);
+  color: var(--text-light); /* Use lighter text color */
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -350,7 +354,7 @@ button{
   display: inline-block;
   padding: 10px 20px;
   background-color: var(--primary_color);
-  color: var(--secondary_color);
+  color: var(--text-light); /* Use lighter text color */
   text-decoration: none;
   border-radius: 4px;
   font-weight: bold;
@@ -386,6 +390,7 @@ button{
 
 .grid-item p {
   margin-top: 10px;
+  color: var(--text-dark); /* Use darker text color */
 }
 
 /* trips */
@@ -438,7 +443,7 @@ button{
 
 .trip p {
   margin-top: 10px;
-  color: #333;
+  color: var(--text-dark); /* Use darker text color */
 }
 
 .trips-table {
@@ -465,9 +470,10 @@ th, td {
 
 th {
   background-color: var(--primary_color);
-  color: var(--secondary_color);
+  color: var(--text-light); /* Use lighter text color */
 }
 
 td {
   background-color: var(--secondary_color);
+  color: var(--text-dark); /* Use darker text color */
 }
