@@ -37,7 +37,7 @@ header img {
 header nav.links {
   display: flex;
   justify-content: flex-end;
-  gap: 20px;
+  gap: 40px;
 }
 
 header nav.links a {
@@ -45,6 +45,7 @@ header nav.links a {
   text-decoration: none;
   color: var(--secondary_color);
   font-weight: bold;
+  font-size: 1.2em; 
 }
 
 /* Hero Section Styling */
@@ -69,7 +70,10 @@ header nav.links a {
   color: var(--secondary_color);
   top: 120px;
   left: 40px;
-
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center; 
 }
 
 .hero article {
@@ -84,14 +88,16 @@ header nav.links a {
   color: white;
   padding: 10px;
   font-family: var(--font-text);
+  flex-wrap: wrap;
 }
 
 .hero article img {
-  width: auto;
-  height: 150px;
-  float: right;
+  width: 100%;
+  max-width: 150px; 
+  height: auto;
   border-radius: 8px;
   margin-left: 20px;
+  flex-shrink: 0;
 }
 
 .hero article p {
@@ -99,6 +105,7 @@ header nav.links a {
   margin: 20px;
   color: white;
   flex: 1;
+  min-width: 200px;
 }
 
 /* History Section Styling */
@@ -242,7 +249,6 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* background-color: var(--accent1-color); my last changing */
 }
 .employee {
   text-align: center;
@@ -291,3 +297,177 @@ button{
   width: 150px;
 }
 /* end form */
+
+
+/* Newsletter Section Styling */
+.newsletter {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--secondary_color);
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.newsletter button {
+  padding: 10 px 15px;
+  background-color: var(--primary_color);
+  color: var(--secondary_color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+.newsletter button:hover {
+  background-color: var(--accent2_color);
+}
+
+/* Call to Action Section Styling */
+.call-to-action {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--accent1-color);
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.call-to-action a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary_color);
+  color: var(--secondary_color);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.call-to-action a:hover {
+  background-color: var(--accent2_color);
+}
+
+/* About Section Styling */
+.about {
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  background-color: var(--secondary_color);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.grid-item p {
+  margin-top: 10px;
+}
+
+/* trips */
+.cta-contact {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--accent1-color);
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.cta-contact .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary_color);
+  color: var(--secondary_color);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.cta-contact .button:hover {
+  background-color: var(--accent2_color);
+}
+
+.trip-descriptions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.trip {
+  background-color: var(--secondary_color);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.trip img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.trip h3 {
+  margin-top: 10px;
+  font-family: var(--font-heading);
+}
+
+.trip p {
+  margin-top: 10px;
+  color: #333;
+}
+
+.trips-table {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.trips-table h2 {
+  text-align: center;
+  font-family: var(--font-heading);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background-color: var(--primary_color);
+  color: var(--secondary_color);
+}
+
+td {
+  background-color: var(--secondary_color);
+}
